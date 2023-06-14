@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Service
+metadata:
+  annotations:
+    
+  labels:
+    app: rabbitmq
+  name: rabbitmqsvc
+spec:
+  type: NodePort
+  ports:
+  - name: "5672"
+    port: 5672
+    nodePort: 30042
+  - name: "15672"
+    port: 15672
+    nodePort: 30043
+  selector:
+    app: rabbitmq
+
