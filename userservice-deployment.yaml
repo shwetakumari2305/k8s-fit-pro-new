@@ -19,7 +19,7 @@ spec:
       containers:
       - env:
         - name: Domain
-          value: localhosteureka.client.serviceUrl.defaultZone=http://eurekaserversvc:8761/eureka
+          value: eureka.client.serviceUrl.defaultZone=http://eurekaserversvc:8761/eureka
         - name: enthusiast_home_page_url
           value: http://productwebappsvc:8087/#/innovators
         - name: enthusiast_redirect_url
